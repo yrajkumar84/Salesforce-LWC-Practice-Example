@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="DisplayRecordDataUsinggetRecord">
+
+        <lightning-record-view-form
+            record-id={recordId}
+            object-api-name={accountObject}
+
+        >
+        <!--to show thwe fields -->
+        <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-2" >
+                <lightning-output-field field-name={nameField}></lightning-output-field>
+            </div>
+            <div class="slds-form-element slds-form-element_stacked">
+                <span class="slds-form-element__label">Owner Email</span>
+                <div class="slds-form-element__control">
+                    <lightning-formatted-email value={ownerField}>
+                    </lightning-formatted-email >
+                </div>
+            </div>
+        </div>
+
+        </lightning-record-view-form>
+    </lightning-card>
+</template>
