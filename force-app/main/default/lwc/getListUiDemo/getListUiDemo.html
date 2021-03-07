@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="List View Token" icon-name="custom:custom15">
+        <table>
+            <thead>
+                <tr>
+                    <th>Account Id</th>
+                    <th>Account Name</th>
+                    <th>Account Type</th>
+                    <th>Account Phone</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <template if:true={records}>
+                    
+                        <template for:each={records} for:item="record">
+                            <tr  key={record.id} >
+                                <td>{record.id}</td>
+                               <td>{record.fields.Name.value}</td>
+                               <td>{record.fields.Type.value}</td>
+                               <td>{record.fields.Phone.value}</td>
+                                <td>
+                                    <button onclick={deleteHandler}> Delete </button>
+                                </td>
+                                <td>
+                                    <button onclick={EditHandler}> Edit </button>
+                                </td>
+
+                            </tr>
+                        </template>
+                    
+                </template>
+            </tbody>
+        </table>
+        
+
+    </lightning-card>
+</template>

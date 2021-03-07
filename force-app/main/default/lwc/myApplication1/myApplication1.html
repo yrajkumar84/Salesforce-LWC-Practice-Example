@@ -1,0 +1,29 @@
+<template>
+    <lightning-card   title="MyApplication1">
+        
+      
+        <div class="my-div1">
+        {Name}  <lightning-input  label="Name" placeholder=" enter name" onchange={NameChange}></lightning-input>
+        {Address} <lightning-input  label="Address" placeholder="enter addres" onchange={NameChange1}></lightning-input>
+    </div>
+    
+    <div class="my-div2">
+        {phone}  <lightning-input  label="Phone" placeholder="phone no" onchange={NameChange2}></lightning-input>
+        {age}  <lightning-input  label="Age" placeholder="age" onchange={NameChange3}></lightning-input>
+    </div>
+    <div>
+            <lightning-input type="checkbox" label="Married" onchange={married} ></lightning-input>
+            <template if:true={marritualStatus}>
+                congrats you are eligible
+            </template>
+    </div>
+    <template for:each={citylist} for:item="city">
+        <p key={city}>{city}</p>
+    </template>
+    <h1>Helloooooo</h1>
+    <template iterator:it={citylist}> 
+    <p key={it.value}>{it.value}</p>
+    </template>
+    </lightning-card>
+    
+</template>

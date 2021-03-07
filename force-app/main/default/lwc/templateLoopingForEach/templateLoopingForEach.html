@@ -1,0 +1,24 @@
+<template>
+    <lightning-card icon-name="custom:custom14">
+        <ul class="slds-m-around_medium"> 
+            <template for:each={carlist} for:item="car">
+                <a href="#" key={car}  
+                class="list-group-item list-group-item-action">{car} </a>
+               
+            </template>
+        </ul>
+    </lightning-card>
+
+<lightning-card icon-name="custom:custom15">
+    <ul class="slds-m-around_medium"> 
+        <template for:each={programlist} for:item="prog">
+            <a href="#" key={prog.Id}  
+            class="list-group-item list-group-item-action">{prog.language} </a>
+           
+        </template>
+    </ul>
+</lightning-card>
+
+</template>
+
+

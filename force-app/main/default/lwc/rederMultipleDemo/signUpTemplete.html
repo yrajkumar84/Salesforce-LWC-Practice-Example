@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Render Multiple Templete" icon-name="custom:custom14">
+    
+        <div class="slds-m-around_medium">
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium">Sign Up Page</h2> 
+
+            <lightning-input type="text" label="Enter your First Name"></lightning-input>
+            <lightning-input type="text" label="Enter your Last Name"></lightning-input>
+            <lightning-input type="text" label="Enter your Email Address"></lightning-input>
+            <lightning-input type="password" label="Enter Password"></lightning-input>
+
+            <lightning-button variant="success" label="Sign Up" onclick={submitHandler} title="Sign Up"></lightning-button>
+            <lightning-button variant="destructive" label="Back" onclick={handleClick} title="Back"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

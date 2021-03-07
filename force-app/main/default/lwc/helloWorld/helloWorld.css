@@ -1,0 +1,11 @@
+.greet{
+  color: red;  
+}
+
+ div{
+    border: 5px solid tan;
+}
+
+:host{
+    border: 5px solid tomato;
+}
